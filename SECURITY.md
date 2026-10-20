@@ -6,7 +6,7 @@ is complete; independent security/privacy/legal/operator reviews remain open.
 
 ## Report privately
 
-For a suspected vulnerability use [GitHub private vulnerability reporting](https://github.com/zidged-commits/Baarne/security/advisories/new).
+For a suspected vulnerability use [GitHub private vulnerability reporting](https://github.com/zidged-commits/baarne/security/advisories/new).
 Private vulnerability reporting is enabled for this repository. Reports go
 through GitHub to repository maintainers; this is not an independently staffed
 security service or an established response-time/bounty programme.
@@ -17,7 +17,7 @@ report identifies the commit/file, affected boundary, impact, expected versus
 observed behaviour and minimal reproduction with newly generated synthetic data.
 Use placeholders for credentials and identities; do not include real secrets.
 
-Use the [public technical finding form](https://github.com/zidged-commits/Baarne/issues/new/choose)
+Use the [public technical finding form](https://github.com/zidged-commits/baarne/issues/new/choose)
 for ordinary non-sensitive bugs. If unsure whether disclosure would expose a
 vulnerability or private data, use the private route first.
 

@@ -9,8 +9,8 @@ an existing item. Core Pilot remains NO-GO.
 ## Choose a channel
 
 - [Private security reports](SECURITY.md): vulnerabilities, exploitation or privacy leakage.
-- [Technical findings](https://github.com/zidged-commits/Baarne/issues/new/choose): reproducible, non-sensitive defects and specific trust-boundary findings.
-- [Discussions](https://github.com/zidged-commits/Baarne/discussions): questions, design feedback, cost/operations assumptions and general ideas.
+- [Technical findings](https://github.com/zidged-commits/baarne/issues/new/choose): reproducible, non-sensitive defects and specific trust-boundary findings.
+- [Discussions](https://github.com/zidged-commits/baarne/discussions): questions, design feedback, cost/operations assumptions and general ideas.
 - [Review request](REVIEW_REQUEST.md): components, evidence and unanswered questions.
 
 ## Source and reproducibility

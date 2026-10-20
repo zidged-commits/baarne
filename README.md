@@ -14,7 +14,7 @@ Genesis/key decisions, and explicit pilot approval remain open (C1–C4).
 
 ## Start the review
 
-[Independent review request](REVIEW_REQUEST.md) · [Contribution guide](CONTRIBUTING.md) · [Private security reporting](SECURITY.md) · [Discussions](https://github.com/zidged-commits/Baarne/discussions)
+[Independent review request](REVIEW_REQUEST.md) · [Contribution guide](CONTRIBUTING.md) · [Private security reporting](SECURITY.md) · [Discussions](https://github.com/zidged-commits/baarne/discussions)
 
 - [Application sources and selected vendored dependencies](review/r12/application/)
 - [Run and inspect the isolated candidate](review/r12/README.md)

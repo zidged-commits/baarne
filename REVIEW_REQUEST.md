@@ -48,8 +48,8 @@ network's history. A valid historical prefix does not prove latest-state freshne
 
 ## Respond
 
-Use [Discussions](https://github.com/zidged-commits/Baarne/discussions) for public
-questions and design criticism, or [a structured issue](https://github.com/zidged-commits/Baarne/issues/new/choose)
+Use [Discussions](https://github.com/zidged-commits/baarne/discussions) for public
+questions and design criticism, or [a structured issue](https://github.com/zidged-commits/baarne/issues/new/choose)
 for a concrete non-sensitive finding. Please identify scope, evidence, assumptions,
 impact and the smallest reproduction. A narrower accurate review is useful.
 Use [the private reporting route](SECURITY.md) for vulnerabilities or private data.
