@@ -1,0 +1,22 @@
+{
+  "version": "BAARNE_OPERATOR_REVIEW_TEMPLATE_V1",
+  "mode": "ISOLATED_SYNTHETIC_LAB",
+  "purpose": "Review checklist only; does not grant authority or implement a new gate",
+  "productionAuthorized": false,
+  "productionDeploymentEnabled": false,
+  "realUserDataEnabled": false,
+  "publicApplicationListenerEnabled": false,
+  "publicChainWritesEnabled": false,
+  "networkGenesisAuthority": null,
+  "validatorOperatorIdentities": [],
+  "independentArchiveOperators": [],
+  "productionKeyCustodyApproved": false,
+  "productionRetentionApproved": false,
+  "securityReviewAccepted": false,
+  "legalPrivacyReviewAccepted": false,
+  "incidentOwner": null,
+  "alarmTargets": [],
+  "livePilotPermission": null,
+  "reviewGates": ["C1", "C2", "C3", "C4"],
+  "doNotTreatSyntheticResultsAsHumanApproval": true
+}

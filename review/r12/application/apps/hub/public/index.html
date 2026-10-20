@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>BAARNE Hub — Synthetic Behavioral Twin Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="demo-banner"><strong>SYNTHETIC DEMONSTRATION</strong><span>Fictional people · local browser data · no Core membership changes</span></div>
+  <header class="topbar">
+    <a class="brand" href="#welcome" data-nav="welcome"><span class="mark">B</span><span>BAARNE <small>Hub</small></span><span class="demo-pill">synthetic</span></a>
+    <nav aria-label="Prototype screens">
+      <button data-nav="welcome">Welcome</button><button data-nav="onboarding">Build</button><button data-nav="profile">Profile</button><button data-nav="discover">Discover</button><button data-nav="request">Request</button><button data-nav="mutual">Introduction</button><button data-nav="privacy">Privacy</button>
+    </nav>
+  </header>
+  <main>
+<section class="screen active hero" id="welcome">
+  <div class="hero-copy">
+    <p class="eyebrow">Meaningful connections beyond familiar circles</p>
+    <h1>New places. Meaningful connections.</h1>
+    <p class="lead">For travelers, makers and curious people: share only what you choose, explore explainable possibilities, and decide together whether to connect.</p>
+    <div class="welcome-steps">
+      <article class="welcome-step">
+        <h3>01 Share what you choose</h3>
+        <p>Create a voluntary, private profile.</p>
+      </article>
+      <article class="welcome-step">
+        <h3>02 Explore the possibilities</h3>
+        <p>Explore explainable matches.</p>
+      </article>
+      <article class="welcome-step">
+        <h3>03 Decide together</h3>
+        <p>Make decisions with mutual consent.</p>
+      </article>
+    </div>
+    <div class="actions">
+      <button class="primary" data-nav="onboarding">Build your profile</button>
+      <button class="secondary" data-nav="discover">Explore demo people</button>
+    </div>
+    <p class="boundary">A match never creates a BAARNE reference, membership right, reputation score, or trust judgment.</p>
+  </div>
+  <div class="orbit" aria-hidden="true">
+    <div class="orb one">skills</div>
+    <div class="orb two">needs</div>
+    <div class="orb three">goals</div>
+    <div class="orb core">you</div>
+  </div>
+</section>
+
+    <section class="screen" id="onboarding">
+      <div class="section-head"><div><p class="eyebrow">Build Your Twin</p><h2>Five minutes, one optional answer at a time.</h2></div><div class="progress"><span id="progress-label">0 / 20</span><div><i id="progress-bar"></i></div></div></div>
+      <article class="question-card"><span class="category" id="question-category"></span><h3 id="question-prompt"></h3><p>Select any that fit. Nothing is shared unless you explicitly enable it.</p><div id="question-options" class="option-grid"></div><label class="approval"><input id="question-discovery" type="checkbox"> Use this answer for discovery</label><div class="actions"><button id="previous-question" class="secondary">Previous</button><button id="skip-question" class="secondary">Skip</button><button id="save-answer" class="primary">Save and continue</button></div></article>
+    </section>
+
+    <section class="screen" id="profile">
+      <div class="section-head"><div><p class="eyebrow">My Discovery Profile</p><h2>See exactly what discovery can use.</h2></div><label class="switch"><input id="discovery-enabled" type="checkbox"><span></span>Discovery enabled</label></div>
+      <div id="profile-fields" class="profile-grid"></div>
+<div class="actions">
+  <button class="primary" data-nav="discover">Explore opportunities</button>
+  <button class="secondary" data-nav="onboarding">Review private answers</button>
+</div>
+      <p class="boundary">Private onboarding answers that are not approved do not appear here and are not passed to matching.</p>
+    </section>
+
+    <section class="screen" id="discover">
+      <div class="section-head"><div><p class="eyebrow">Discover People</p><h2>Transparent reasons, no compatibility percentage.</h2></div><label>Ranking lens<select id="matching-mode"><option value="combined">Combined opportunity</option><option value="complementarity">Complementarity</option><option value="similarity">Similarity</option></select></label></div>
+      <div id="recommendations" class="cards"></div>
+    </section>
+
+    <section class="screen" id="request">
+      <p class="eyebrow">Introduction Request</p><h2>Interest is private until it becomes mutual.</h2>
+      <div id="request-summary" class="empty-state">Choose a recommendation first.</div>
+      <div class="actions"><button id="express-interest" class="primary" disabled>Express interest</button><button id="decline-match" class="secondary" disabled>Not for me</button></div>
+    </section>
+
+    <section class="screen" id="mutual">
+      <div class="section-head"><div><p class="eyebrow">Mutual Introduction</p><h2>Both people control disclosure and contact.</h2></div><label>Demo actor<select id="demo-actor"></select></label></div>
+      <div id="introduction-status" class="timeline empty-state">No introduction selected.</div>
+      <fieldset id="share-fields"><legend>Approve these fields for this introduction</legend><label><input type="checkbox" value="skillsOffered" checked> Skills offered</label><label><input type="checkbox" value="goals" checked> Goals</label><label><input type="checkbox" value="languages" checked> Languages</label><label><input type="checkbox" value="communicationMethods" checked> Contact methods</label></fieldset>
+      <div class="actions"><button id="other-interest" class="secondary" disabled>Other person expresses interest</button><button id="approve-introduction" class="primary" disabled>Approve disclosure & contact</button><button id="confirm-connected" class="secondary" disabled>Confirm connection</button></div>
+    </section>
+
+    <section class="screen" id="privacy">
+      <p class="eyebrow">Privacy & Control</p><h2>Your twin is useful only while you control it.</h2>
+      <div class="privacy-grid"><article><h3>Discovery</h3><p>Disable all new recommendations without deleting your private answers.</p><button id="privacy-toggle" class="secondary">Disable discovery</button></article><article><h3>Blocking</h3><p>Blocking prevents future recommendations and module contact for the pair.</p><button id="block-selected" class="secondary" disabled>Block selected person</button></article><article class="danger"><h3>Delete twin</h3><p>Erases local private answers, disables discovery, removes pending disclosures, and prevents new introductions.</p><button id="delete-profile">Delete local twin</button></article></div>
+      <div class="local-note"><strong>Local demo storage</strong><p>State is stored only in this browser's localStorage. The user switcher is not authentication. Clear site data or use reset to remove the demonstration.</p><button id="reset-demo" class="secondary">Reset synthetic demo</button></div>
+    </section>
+  </main>
+  <footer><span>BAARNE Behavioral Twin MVP · Phase 1</span><span>No blockchain · No AI API · No tracking · Synthetic users only</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

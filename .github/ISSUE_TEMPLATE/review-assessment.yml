@@ -1,0 +1,58 @@
+{
+  "name": "Specific review assessment",
+  "description": "An evidenced concern about an existing trust boundary; general ideas belong in Discussions.",
+  "title": "[Review] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "Review questions: https://github.com/zidged-commits/Baarne/blob/main/REVIEW_REQUEST.md. Security/private issues must use the private reporting route."
+      }
+    },
+    {
+      "type": "input",
+      "id": "scope",
+      "attributes": {
+        "label": "Reviewed commit/files and boundary"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "claim-evidence",
+      "attributes": {
+        "label": "Challenged claim, evidence and assumptions",
+        "description": "Separate observed behaviour from inference; use only public or fresh synthetic examples."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "limits",
+      "attributes": {
+        "label": "Impact and review limitations",
+        "description": "State relevant tool/AI assistance and what was not reviewed."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Submission boundary",
+        "options": [
+          {
+            "label": "No real-user data, credentials, private provider state or vulnerability exploit details are included.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

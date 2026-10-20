@@ -1,0 +1,16 @@
+{
+  "version": "BAARNE_REVIEW_COMPANION_V1",
+  "binaryKitIncluded": false,
+  "kitManifestSha256": "dc01b6ff1ef1b2b644c1d13e642f95d2836da6f3f1725a0119f8b10fe0fe0c51",
+  "kitManifestName": "ENGINEERING_MANIFEST.json",
+  "node": "24.22.0",
+  "platforms": [
+    "win-x64 Hub",
+    "linux-x64 Core"
+  ],
+  "completeSourceAndNoticeDeliveryRequiredWithBinaryKit": true,
+  "sourceObligations": "DISTRIBUTION_OBLIGATIONS.md",
+  "applicationManifestSha256": "e7268ac7e4b1df8c46f23c88822468e316dccf53979ea077bed78218d4a48f95",
+  "sourceAggregateSha256": "d598c9dedf00ec989af3e3a0c38f152ef4476f89a92fec24c1375d2ebfcd65dc",
+  "productionAuthorized": false
+}

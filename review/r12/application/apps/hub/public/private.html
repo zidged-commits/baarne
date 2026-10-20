@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BAARNE — imzalı sentetik akış</title><link rel="stylesheet" href="./styles.css"></head>
+<body><div class="demo-banner"><strong>YALNIZ SENTETİK / NO-GO</strong><span>İki ayrı istemci · localhost · gerçek veri girmeyin</span></div>
+<main><h1>BAARNE imzalı özel akış</h1>
+<p>Her sekme kendi sahip anahtarını üretir. Başka kişi seçerek işlem yapılamaz. İkinci katılımcı için ayrı sekme veya tarayıcı kullanın. Servis yalnız açık sentetik oturum boyunca çalışır.</p>
+<section><h2>Sahip erişimi</h2><label>Kurtarma dosyası parolası (en az 16 karakter)<input id="password" type="password" autocomplete="new-password" minlength="16"></label>
+<button id="create">Yeni sentetik sahip oluştur</button><label>Önceden indirdiğiniz şifreli sahip dosyası<input id="backup-file" type="file" accept="application/json,.json"></label><button id="restore">Aynı sahibi geri aç</button><button id="backup" disabled>Şifreli sahip dosyasını indir</button><button id="lock" disabled>Anahtarı kilitle</button>
+<p>Parola sunucuya gönderilmez. Sahip dosyası ve parola kaybolursa merkezi sıfırlama yoktur. Geri açmak aynı anahtarı kullanır; eski cihazı iptal etmez. Üretim key custody, TLS ve cihaz iptal ayarları kapalıdır.</p></section>
+<section id="workspace" hidden><h2>Özel profil ve izinler</h2><p id="actor"></p>
+<label>Alan sorusu<select id="question"></select></label><div id="options"></div>
+<label><input id="answer-discovery" type="checkbox">Bu yanıt eşleştirmede kullanılabilir</label>
+<label><input id="field-discovery" type="checkbox">Bu alan keşfe açılabilir</label>
+<label><input id="field-introduction" type="checkbox">Bu alan tanıştırmada ayrıca onaylanabilir</label>
+<button id="save">Yanıt ve izinleri imzala/kaydet</button>
+<button id="grant">Keşfi aç ve bir saatlik eşleştirme izni ver</button><button id="revoke">Eşleştirme iznini geri çek</button>
+<button id="discover">Açıklanabilir fırsatları getir</button><button id="sync">Bekleyen profil izinlerini eşe aktar</button><pre id="matches"></pre>
+<h2>İki taraflı tanıştırma</h2><p>Her iki taraf ilgi ve ayrı alan açıklama onayı vermeden içerik açılmaz. Aktif izinler her okumada tekrar kontrol edilir.</p>
+<button data-pair="INTEREST">İlgileniyorum</button><button id="approve">İzinli alanları açıklamayı onayla</button><button data-pair="CONNECT">Bağlantıyı doğrula</button><button data-pair="WITHDRAW">Tanıştırmadan çekil</button><button data-pair="BLOCK">Eşi engelle</button><button id="read">Güncel tanıştırmayı oku</button><pre id="pair"></pre>
+<h2>Veri ve belirsiz işlem</h2><button id="export">Kendi profilini dışa aktar</button><button id="delete">Profili sil ve eşe silme bildirimi gönder</button><button id="reconcile">Bekleyen işlemin sonucunu sorgula</button><button id="retry">Aynı bekleyen işlemi yeniden gönder</button><button id="discard">Uygulanmadığı doğrulanan işlemi bırak</button>
+<p>Silme mantıksal tombstone ve erişim kesmedir. Şifreli geçmiş/yedekler fiziksel olarak silinmiş sayılmaz; karşı tarafın önceden aldığı kopya geri alınamaz. Süresi dolan/geri çekilen rıza kendiliğinden canlanmaz.</p>
+</section><p id="status" role="status" aria-live="polite">Henüz sahip anahtarı bağlı değil.</p>
+<p>Bu akış Core REFERENCE veya üyelik hakkı oluşturmaz. <a href="/">Tarihsel yerel demo</a> ayrı bir gösterimdir; buradaki imzalı işlem yetkisini sağlamaz.</p></main><script type="module" src="./private-app.mjs"></script></body></html>

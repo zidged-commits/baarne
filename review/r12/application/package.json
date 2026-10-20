@@ -1,0 +1,12 @@
+{
+  "name": "baarne-v1-isolated-synthetic-review",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.19.0 <25"
+  },
+  "scripts": {
+    "hub:demo": "node apps/hub/server.mjs",
+    "hub:private": "node apps/hub/private-server.mjs"
+  }
+}

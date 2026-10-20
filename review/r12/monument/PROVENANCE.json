@@ -1,0 +1,324 @@
+{
+  "version": "BAARNE_MONUMENT_SYNTHETIC_CAPSULE_V1",
+  "evidenceMode": "SYNTHETIC_FIXTURE",
+  "node": "v24.22.0",
+  "buildOnlyTypeScript": "5.8.3",
+  "sources": {
+    "scripts/core-portable-verifier.mjs": {
+      "path": "source/scripts/core-portable-verifier.mjs",
+      "sha256": "77c686a584aa1608dcb8f99c9361b3e618ce9cc217553df02a73faffb31a1008"
+    },
+    "packages/membership-archive/src/index.mjs": {
+      "path": "source/packages/membership-archive/src/index.mjs",
+      "sha256": "d751d765dfd5e3e16b4b1746ed7f1e18daac0d4f7d1e2b4d22b422c976849c1b"
+    },
+    "packages/admission/src/json.ts": {
+      "path": "source/packages/admission/src/json.ts",
+      "sha256": "6d932bc388151014b371541d2e5498110a1595642cea13bd5798614f48a443a6"
+    },
+    "packages/membership-gate-f/src/index.mjs": {
+      "path": "source/packages/membership-gate-f/src/index.mjs",
+      "sha256": "67468cb4a454207abeadd5bab8176691f82716799b0279c01022acd023f85eb0"
+    },
+    "packages/membership-state/src/index.mjs": {
+      "path": "source/packages/membership-state/src/index.mjs",
+      "sha256": "eff6258c463ebebcb9f57735417465191e0b5dc1e5588307dab352311489975c"
+    },
+    "packages/identity/src/evm-eoa.ts": {
+      "path": "source/packages/identity/src/evm-eoa.ts",
+      "sha256": "42a5c58a942aa52ffcce28f3d8b48abba9459a3297bbbbaf445a602d1b9d7bb1"
+    },
+    "packages/v0.1-core/src/reference.mjs": {
+      "path": "source/packages/v0.1-core/src/reference.mjs",
+      "sha256": "d59f55208e8bbf51fd5d1137a3dd021e4e2ed61e1b7b3717a999c27ac133296f"
+    },
+    "packages/identity/src/types.ts": {
+      "path": "source/packages/identity/src/types.ts",
+      "sha256": "84da1f55081194d79b471958ae6dd275d3d0e70325919d00761839a325d18939"
+    },
+    "packages/trust-protocol/src/index.ts": {
+      "path": "source/packages/trust-protocol/src/index.ts",
+      "sha256": "75e6e362abb49aeaff074f241ab37eca81a917b998aaf53314d6685f3c3e7a3c"
+    },
+    "packages/identity/src/index.ts": {
+      "path": "source/packages/identity/src/index.ts",
+      "sha256": "5a035bdfb98dba02a4c302c633fce3524acf426829d0a5f7398794a50713f26a"
+    },
+    "packages/v0.1-core/src/crypto.mjs": {
+      "path": "source/packages/v0.1-core/src/crypto.mjs",
+      "sha256": "dc6344d421428bbffcba7a4eb62f136b7ec2591eae883bcbf0c8b1ac78dc06da"
+    },
+    "packages/trust-protocol/src/json.ts": {
+      "path": "source/packages/trust-protocol/src/json.ts",
+      "sha256": "09f8054cce8aedaca3281225f4a479c97b42301380b8f3b038a7517459ad6458"
+    },
+    "packages/trust-protocol/src/validation-error.ts": {
+      "path": "source/packages/trust-protocol/src/validation-error.ts",
+      "sha256": "fa4593b863358ed78fe5cd9704b1e1970cc465bb436cac14561465eb195d265f"
+    },
+    "packages/trust-protocol/src/types.ts": {
+      "path": "source/packages/trust-protocol/src/types.ts",
+      "sha256": "dad2406a6059883aa1b5afa8d63a071b877813a14a9d38ffbbcf0f5e7f2b6d3f"
+    },
+    "packages/identity/src/envelope.ts": {
+      "path": "source/packages/identity/src/envelope.ts",
+      "sha256": "793379888c7f3fde17205d6725013f4502586b9534a29c77120e5831e1ad7d0f"
+    },
+    "docs/governance/BAARNE_MANIFESTO.md": {
+      "path": "documents/docs/governance/BAARNE_MANIFESTO.md",
+      "sha256": "169f8f73bd91a03a01eee2fcdfc65433d92265ca44ee5472a8ccbaaaddb5771a"
+    },
+    "docs/AI_HANDOFF/CONSTITUTION_INVARIANTS.md": {
+      "path": "documents/docs/AI_HANDOFF/CONSTITUTION_INVARIANTS.md",
+      "sha256": "10882a329539ede67696c15d886412f56de1ecb143443b83e8bea26c57510e8d"
+    },
+    "docs/TRUST_PROTOCOL_V0.1.md": {
+      "path": "documents/docs/TRUST_PROTOCOL_V0.1.md",
+      "sha256": "ee9c982aa4e4aa78de41092c8db36a381f2e8d8b66dc4673d3f4ee3040c33cdf"
+    },
+    "docs/M1_FREEZE_REPORT.md": {
+      "path": "documents/docs/M1_FREEZE_REPORT.md",
+      "sha256": "577dbb084b6abba322a8cf03e7f729c398c266b601a429297f5dbe5249e9e488"
+    },
+    "docs/M1_GATE_F_REPORT.md": {
+      "path": "documents/docs/M1_GATE_F_REPORT.md",
+      "sha256": "5fc1fb1797dafb956bdab46c35bd875ed48667654ecb7ff022dddd9025dfd772"
+    },
+    "docs/M1_GATE_H_REPORT.md": {
+      "path": "documents/docs/M1_GATE_H_REPORT.md",
+      "sha256": "7251b004152361fae8747f7f27ce5699c308b1ef53fa255cee7a5c853417bba4"
+    },
+    "packages/membership-state/README.md": {
+      "path": "documents/packages/membership-state/README.md",
+      "sha256": "7b67347935200c03773da0fc3645f65710c65fb0ffc1706960e4a8e2569025b1"
+    },
+    "docs/permanence/BAARNE_PERMANENCE_KIT_SPEC.md": {
+      "path": "documents/docs/permanence/BAARNE_PERMANENCE_KIT_SPEC.md",
+      "sha256": "5ddbbf8fbae2898ca6b69af4949b5c12d4d50b2c112c231e774ea49e5ba23473"
+    },
+    "docs/BAARNE_RELATED_WORK_AND_DIGITAL_MONUMENT_RESEARCH_2026-10-16.md": {
+      "path": "documents/docs/BAARNE_RELATED_WORK_AND_DIGITAL_MONUMENT_RESEARCH_2026-10-16.md",
+      "sha256": "30d11fbc0a5ed966bbc03cd865525b5efa3d66be01b35c1a6b7bf299a69850ca"
+    },
+    "LICENSE": {
+      "path": "LICENSE",
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    "LICENSING.md": {
+      "path": "LICENSING.md",
+      "sha256": "590865bf6bf9cb39f252104d26c74217388aac6636c1a1dcf8f33b758ca7bf37"
+    },
+    "LICENSES/CC-BY-SA-4.0.txt": {
+      "path": "LICENSES/CC-BY-SA-4.0.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "76386e392257f57ea28001fdcd9756a72f31c223d3f99c1122566a5fbb5d62f4"
+    },
+    "docs/permanence/MONUMENT_READ_ME_FIRST.md": {
+      "path": "READ-ME-FIRST.md",
+      "sha256": "5c79f940874c6ed4a6d25023ca4d6f4614030fddd8d6b18fb680a95c84a0698a"
+    },
+    "scripts/monument-capsule-verifier.mjs": {
+      "path": "verify.mjs",
+      "sha256": "07369af6a6752c9201c676aebc9fd5865bad3bb079a7eb00b83faf42c4bc3cf6"
+    },
+    "node_modules/ethers/dist/ethers.js": {
+      "path": "node_modules/ethers/ethers.js",
+      "sha256": "98ef38ca12d3a7829eb2d8398e033434fe521b7a1873427e77f2eb5e8513f761"
+    },
+    "node_modules/ethers/package.json": {
+      "path": "vendor-notices/ethers/package.json",
+      "sha256": "01e68a5516b5575604ee43710101a7b0dbbaa2bef906a307f0fbadce01c8475a"
+    },
+    "node_modules/ethers/LICENSE.md": {
+      "path": "vendor-notices/ethers/LICENSE.md",
+      "sha256": "44eea86637405118248327fbe9d9fa95d04c7a57221c7e8c155f736db9f1b612"
+    },
+    "node_modules/@adraffy/ens-normalize/package.json": {
+      "path": "vendor-notices/@adraffy/ens-normalize/package.json",
+      "sha256": "fbc5b24e52963420ec80bdfb24d21e783428afe612545ce4dd8e4a43a2f6dbd7"
+    },
+    "node_modules/@adraffy/ens-normalize/LICENSE": {
+      "path": "vendor-notices/@adraffy/ens-normalize/LICENSE",
+      "sha256": "3b458813ab3316b16bf004c4201d4a0583cf615514422dabf4d7c025988d613d"
+    },
+    "node_modules/@noble/curves/package.json": {
+      "path": "vendor-notices/@noble/curves/package.json",
+      "sha256": "bf61194229da9a7fd331fcf44cc24f746b5cbaefe941a312215376584c269bd5"
+    },
+    "node_modules/@noble/curves/LICENSE": {
+      "path": "vendor-notices/@noble/curves/LICENSE",
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    "node_modules/@noble/hashes/package.json": {
+      "path": "vendor-notices/@noble/hashes/package.json",
+      "sha256": "8d8203c66e91a9e6ee510facf378a2c7420b27139360132a257010c2e5f091bc"
+    },
+    "node_modules/@noble/hashes/LICENSE": {
+      "path": "vendor-notices/@noble/hashes/LICENSE",
+      "sha256": "4f221aee6e072336700c408c68ab3b96a3fc09f6aebe6f48f1bd99e5ef13faec"
+    },
+    "node_modules/aes-js/package.json": {
+      "path": "vendor-notices/aes-js/package.json",
+      "sha256": "60fc352466697ba86743b36101b2157cf413ac0e7d317788548993600f10cd7d"
+    },
+    "node_modules/aes-js/LICENSE.txt": {
+      "path": "vendor-notices/aes-js/LICENSE.txt",
+      "sha256": "fca281420c800a4aae284a3b478b48b7a8d83c37285bbf2512bf52a5d597a503"
+    },
+    "node_modules/tslib/package.json": {
+      "path": "vendor-notices/tslib/package.json",
+      "sha256": "7ecf3460a204a34f0ef8ea32d0f9828385658d4e5d5e271f93f40e7b36a32972"
+    },
+    "node_modules/tslib/CopyrightNotice.txt": {
+      "path": "vendor-notices/tslib/CopyrightNotice.txt",
+      "sha256": "da16ddb65f8ca390998fb99223d0112498b56b45784d00afd77ff8ce1ac4de8b"
+    },
+    "node_modules/tslib/LICENSE.txt": {
+      "path": "vendor-notices/tslib/LICENSE.txt",
+      "sha256": "210b19e543130388c68654b7497e967119ce17145f66ab7d85688fbd70f08751"
+    },
+    "node_modules/ws/package.json": {
+      "path": "vendor-notices/ws/package.json",
+      "sha256": "584ce6e7516587ba249dc910b0c04e2753f6b3f451fc3a5bc324f7735bdacc71"
+    },
+    "node_modules/ws/LICENSE": {
+      "path": "vendor-notices/ws/LICENSE",
+      "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+    },
+    "node_modules/@types/node/package.json": {
+      "path": "vendor-notices/@types/node/package.json",
+      "sha256": "d57a323bf4705370a5e2f0ce927e2f265017d2479fd31e9b32e11334c1550308"
+    },
+    "node_modules/@types/node/LICENSE": {
+      "path": "vendor-notices/@types/node/LICENSE",
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    }
+  },
+  "dependencies": [
+    {
+      "name": "ethers",
+      "version": "6.17.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@adraffy/ens-normalize",
+      "version": "1.11.1",
+      "license": "MIT"
+    },
+    {
+      "name": "@noble/curves",
+      "version": "1.2.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@noble/hashes",
+      "version": "1.3.2",
+      "license": "MIT"
+    },
+    {
+      "name": "aes-js",
+      "version": "4.0.0-beta.5",
+      "license": "MIT"
+    },
+    {
+      "name": "tslib",
+      "version": "2.7.0",
+      "license": "0BSD"
+    },
+    {
+      "name": "ws",
+      "version": "8.21.0",
+      "license": "MIT"
+    },
+    {
+      "name": "@types/node",
+      "version": "22.7.5",
+      "license": "MIT"
+    }
+  ],
+  "freezeSourceManifestSha256": "6ee837c7f7e09c506fc1a4d5c3d759a6dc1c6229b960bbc7da4c572dbc1702ff",
+  "freezeComparison": [
+    {
+      "path": "packages/membership-archive/src/index.mjs",
+      "sha256": "d751d765dfd5e3e16b4b1746ed7f1e18daac0d4f7d1e2b4d22b422c976849c1b"
+    },
+    {
+      "path": "packages/admission/src/json.ts",
+      "sha256": "6d932bc388151014b371541d2e5498110a1595642cea13bd5798614f48a443a6"
+    },
+    {
+      "path": "packages/membership-gate-f/src/index.mjs",
+      "sha256": "67468cb4a454207abeadd5bab8176691f82716799b0279c01022acd023f85eb0"
+    },
+    {
+      "path": "packages/membership-state/src/index.mjs",
+      "sha256": "eff6258c463ebebcb9f57735417465191e0b5dc1e5588307dab352311489975c"
+    },
+    {
+      "path": "packages/identity/src/evm-eoa.ts",
+      "sha256": "42a5c58a942aa52ffcce28f3d8b48abba9459a3297bbbbaf445a602d1b9d7bb1"
+    },
+    {
+      "path": "packages/v0.1-core/src/reference.mjs",
+      "sha256": "d59f55208e8bbf51fd5d1137a3dd021e4e2ed61e1b7b3717a999c27ac133296f"
+    },
+    {
+      "path": "packages/identity/src/types.ts",
+      "sha256": "84da1f55081194d79b471958ae6dd275d3d0e70325919d00761839a325d18939"
+    },
+    {
+      "path": "packages/trust-protocol/src/index.ts",
+      "sha256": "75e6e362abb49aeaff074f241ab37eca81a917b998aaf53314d6685f3c3e7a3c"
+    },
+    {
+      "path": "packages/identity/src/index.ts",
+      "sha256": "5a035bdfb98dba02a4c302c633fce3524acf426829d0a5f7398794a50713f26a"
+    },
+    {
+      "path": "packages/v0.1-core/src/crypto.mjs",
+      "sha256": "dc6344d421428bbffcba7a4eb62f136b7ec2591eae883bcbf0c8b1ac78dc06da"
+    },
+    {
+      "path": "packages/trust-protocol/src/json.ts",
+      "sha256": "09f8054cce8aedaca3281225f4a479c97b42301380b8f3b038a7517459ad6458"
+    },
+    {
+      "path": "packages/trust-protocol/src/validation-error.ts",
+      "sha256": "fa4593b863358ed78fe5cd9704b1e1970cc465bb436cac14561465eb195d265f"
+    },
+    {
+      "path": "packages/trust-protocol/src/types.ts",
+      "sha256": "dad2406a6059883aa1b5afa8d63a071b877813a14a9d38ffbbcf0f5e7f2b6d3f"
+    },
+    {
+      "path": "packages/identity/src/envelope.ts",
+      "sha256": "793379888c7f3fde17205d6725013f4502586b9534a29c77120e5831e1ad7d0f"
+    },
+    {
+      "path": "docs/governance/BAARNE_MANIFESTO.md",
+      "sha256": "169f8f73bd91a03a01eee2fcdfc65433d92265ca44ee5472a8ccbaaaddb5771a"
+    },
+    {
+      "path": "docs/M1_GATE_F_REPORT.md",
+      "sha256": "5fc1fb1797dafb956bdab46c35bd875ed48667654ecb7ff022dddd9025dfd772"
+    },
+    {
+      "path": "docs/M1_GATE_H_REPORT.md",
+      "sha256": "7251b004152361fae8747f7f27ce5699c308b1ef53fa255cee7a5c853417bba4"
+    },
+    {
+      "path": "packages/membership-state/README.md",
+      "sha256": "7b67347935200c03773da0fc3645f65710c65fb0ffc1706960e4a8e2569025b1"
+    }
+  ],
+  "runtimeSelection": "Unmodified installed ethers/dist/ethers.js ESM bundle via local package wrapper",
+  "projectLicense": "AGPL-3.0-only",
+  "documentationLicense": "CC-BY-SA-4.0",
+  "licenseScope": "LICENSING.md",
+  "redistributionReview": "PENDING_THIRD_PARTY_AND_OWNER_REVIEW",
+  "independentImplementation": false,
+  "livePilotAuthorized": false
+}

@@ -1,0 +1,52 @@
+{
+  "name": "baarne",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BAARNE M0 \u00e2\u20ac\u201d independently verifiable, revocable references",
+  "engines": {
+    "node": ">=22.20.0 <25"
+  },
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*",
+    "blockchain/adapters/*"
+  ],
+  "scripts": {
+    "check:scaffold": "node scripts/check-scaffold.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:m1": "node --test tests/membership-state.test.mjs tests/membership-state.security.test.mjs",
+    "test:m1:gate-f": "node --test tests/membership-gate-f.test.mjs",
+    "test:m1:gate-g": "node --test tests/membership-gate-g.test.mjs",
+    "test:m1:gate-h": "node --test tests/membership-gate-h.test.mjs",
+    "test:m2:snapshot": "node --test tests/governance-snapshot.test.mjs",
+    "test:m2:case": "node --test tests/governance-case.test.mjs",
+    "test:m2:voting-lab": "node --test tests/voting-lab.test.mjs",
+    "test:m2:identity-bridge-lab": "node --test tests/identity-bridge-lab.test.mjs",
+    "test:core-pilot-preflight": "node --test tests/core-pilot-preflight.test.mjs",
+    "test:ai-status": "node --test tests/ai-status-report.test.mjs",
+    "test:archive-rehearsal": "node --test tests/local-archive-rehearsal.test.mjs",
+    "test:behavioral-twin": "node --test tests/behavioral-twin.test.mjs",
+    "test:cross-network-discovery": "node --test tests/cross-network-discovery-lab.test.mjs",
+    "hub:start": "node apps/hub/server.mjs",
+    "hub:evaluate": "node scripts/run-behavioral-twin-evaluation.mjs",
+    "lab:cross-network": "node scripts/run-cross-network-discovery-lab.mjs",
+    "check:m1:gate-f:finalized": "node scripts/check-m1-gate-f-finalized.mjs",
+    "test": "npm run typecheck && node --test tests/trust-protocol.test.mjs tests/identity.test.mjs tests/eas.test.mjs tests/governance.test.mjs tests/issuance.test.mjs tests/verification.test.mjs tests/membership-state.test.mjs tests/membership-state.security.test.mjs tests/membership-gate-f.test.mjs tests/membership-gate-g.test.mjs tests/membership-gate-h.test.mjs tests/governance-snapshot.test.mjs tests/governance-case.test.mjs tests/voting-lab.test.mjs tests/identity-bridge-lab.test.mjs tests/core-pilot-preflight.test.mjs tests/behavioral-twin.test.mjs tests/cross-network-discovery-lab.test.mjs tests/local-archive-rehearsal.test.mjs tests/core-portable-fixture.test.mjs tests/core-fixture-restore.test.mjs tests/strict-eas-commitment.test.mjs tests/eas-commitment-rpc-adapter.test.mjs tests/ai-status-report.test.mjs tests/core-pilot-safe-defaults-draft.test.mjs",
+    "issue:reference": "node scripts/issue-reference.mjs",
+    "demo:identity": "node scripts/local-authorization.mjs",
+    "verify:authorization": "node scripts/verify-authorization.mjs",
+    "eas:preflight": "node scripts/eas-preflight.mjs",
+    "eas:client": "node scripts/eas-client.mjs",
+    "verify:evidence": "node scripts/verify-chain-evidence.mjs",
+    "verify:reference": "node scripts/verify-reference.mjs",
+    "test:portable-archive": "node --test tests/core-portable-fixture.test.mjs",
+    "test:archive-restore": "node --test tests/core-fixture-restore.test.mjs",
+    "test:archive-docker": "node scripts/check-docker-archive-rehearsal.mjs",
+    "test:cometbft-lab": "node --test experiments/cometbft-fee-free-lab/*.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}

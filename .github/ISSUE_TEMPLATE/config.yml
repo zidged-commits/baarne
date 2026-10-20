@@ -1,0 +1,15 @@
+{
+  "blank_issues_enabled": false,
+  "contact_links": [
+    {
+      "name": "Private security report",
+      "url": "https://github.com/zidged-commits/Baarne/security/advisories/new",
+      "about": "Use this private channel for vulnerabilities or possible private-data exposure."
+    },
+    {
+      "name": "Questions and general design feedback",
+      "url": "https://github.com/zidged-commits/Baarne/discussions",
+      "about": "Use Discussions for questions, ideas and broader feedback."
+    }
+  ]
+}

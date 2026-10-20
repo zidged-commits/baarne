@@ -1,0 +1,139 @@
+{
+  "version": "BAARNE_K7_FINAL_ACCEPTANCE_V1",
+  "date": "2026-10-20",
+  "status": "PASSED",
+  "candidateId": "baarne-first-release-engineering-r12",
+  "sourceAggregateSha256": "d598c9dedf00ec989af3e3a0c38f152ef4476f89a92fec24c1375d2ebfcd65dc",
+  "sourceCount": 110,
+  "applicationManifestSha256": "e7268ac7e4b1df8c46f23c88822468e316dccf53979ea077bed78218d4a48f95",
+  "applicationFiles": 175,
+  "kitManifestSha256": "dc01b6ff1ef1b2b644c1d13e642f95d2836da6f3f1725a0119f8b10fe0fe0c51",
+  "frozenSourcesUnchanged": 14,
+  "rootLockUnchanged": true,
+  "scenarioMatrix": [
+    {
+      "id": "A1",
+      "scenario": "Original finite A1: invitation/application, three references, activation, Genesis closure, resignation; unauthorized/conflicting requests rejected",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "NETWORK_R12.json",
+        "CORE_TESTS.txt"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    },
+    {
+      "id": "A2",
+      "scenario": "Original finite A2: lost-response receipt lookup/retry, no double effect, wrong network/old epoch/forged authority/proof and unsupported migration rejected",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "NETWORK_R12.json",
+        "CORE_TESTS.txt"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    },
+    {
+      "id": "A3",
+      "scenario": "3+1 progress, 2+2 halt, rejoin and SIGKILL/restart",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "NETWORK_R12.json"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    },
+    {
+      "id": "A4",
+      "scenario": "Original finite A4: one-surviving-archive full replay; all history unavailable; separate fresh Genesis preserves previous history and has disjoint identities",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "NETWORK_R12.json",
+        "OFFLINE_R12.json",
+        "ARCHIVE_R12.json",
+        "RESTORE_TESTS.txt",
+        "CORE_TESTS.txt"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    },
+    {
+      "id": "A5",
+      "scenario": "Two distinct owners: signed profile/grant/minimized matching/mutual introduction",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "../release-candidate-k6-operations/ISOLATED_TESTS.stdout",
+        "../../K5_SIGNED_HUB_INTEGRATION_REPORT.md"
+      ],
+      "scope": "K5 actual two-browser UI evidence retained, not freshly rerun; r12 transport/operator runtime freshly covered by K6 exact-byte tests"
+    },
+    {
+      "id": "A6",
+      "scenario": "Withdrawal/block/export/delete, no stale private projection; browser ownership/backup",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "../release-candidate-k6-operations/ISOLATED_TESTS.stdout",
+        "../../K5_SIGNED_HUB_INTEGRATION_REPORT.md"
+      ],
+      "scope": "K5 actual two-browser UI evidence retained, not freshly rerun; r12 transport/operator runtime freshly covered by K6 exact-byte tests"
+    },
+    {
+      "id": "A7",
+      "scenario": "Pinned operator recovery, quota/reserve write-stop, closed backup/restore and runbook",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "../release-candidate-k6-operations/VALIDATION_R12.json"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    },
+    {
+      "id": "A8",
+      "scenario": "Exact moved source package, excluded dependencies, offline capsule and clean startup",
+      "result": "PASS_LOCAL_SYNTHETIC",
+      "evidence": [
+        "../release-candidate-k6-operations/PACKAGE_R12_TESTS.txt",
+        "../release-candidate-k8/CAPSULE_VERIFY.json",
+        "../release-candidate-k8/STARTUP.json"
+      ],
+      "scope": "Current r12 sources / unchanged exact binary kit"
+    }
+  ],
+  "freshChecks": {
+    "rootTypecheckAndRegression": 502,
+    "localCoreNodeTests": 26,
+    "restorePythonTests": 4,
+    "fourValidatorNetworkChecks": 11,
+    "offlineCertificateAdversarialChecks": 26,
+    "oneSurvivingArchiveChecks": 4
+  },
+  "retainedExactByteEvidence": {
+    "runtimeTests": 46,
+    "runtimeTestEvidence": "docs/evidence/release-candidate-k6-operations/VALIDATION_R12.json",
+    "r11ToR12RuntimeAndTestBytesUnchanged": true,
+    "packageIsolationTests": 3,
+    "k5BrowserUiAndNativeModulesUnchanged": true,
+    "k5FocusedTests": 83,
+    "browserUiActuallyRerun": false
+  },
+  "skipsCountedAsPass": 0,
+  "failedAttemptIncludedAsAcceptance": false,
+  "failedAttempt": "OFFLINE_R12_LOG.txt rejected wrong evidence profile before certificate checks; corrected explicit V3 record used in OFFLINE_R12_FINAL_LOG.txt",
+  "proof": {
+    "acceptedCount": 24,
+    "certifiedBlockHeight": 38,
+    "executionVerification": "GO_CONSENSUS_PLUS_NODE_MEMBERSHIP_REPLAY",
+    "freshnessProven": false,
+    "genesisSha256": "a3929cd1678c10a18cf895830a8161ee3d1abcea987e0c946c8d0ffdfd9e276e",
+    "livePilotAuthorized": false,
+    "stateHash": "e33d343c0a403604a68b839a02f9dab4f59cdce1485cb7db917320c27be572e4",
+    "status": "OFFLINE_LAB_PROOF_PASS",
+    "trustedCheckpointStatus": "NOT_PROVIDED",
+    "verifiedStateHeight": 37
+  },
+  "testTotalsAddedAcrossOverlappingSuites": false,
+  "newDependenciesInstalled": false,
+  "independentOperators": false,
+  "freshnessProven": false,
+  "productionAuthorized": false,
+  "pilot": "NO-GO",
+  "K7Closed": true,
+  "K8Closed": false,
+  "supersedesScenarioLabelsOnly": "ACCEPTANCE_A1_A8.json",
+  "correction": "A1/A2 labels aligned to the original finite list; A4 explicit fresh-Genesis test reference added. Test outcomes and hashes unchanged."
+}

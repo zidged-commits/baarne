@@ -1,0 +1,14 @@
+{
+  "name": "@baarne/behavioral-twin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.mjs",
+    "./synthetic": "./src/synthetic.mjs",
+    "./evaluation": "./src/evaluation.mjs"
+  },
+  "engines": {
+    "node": ">=22.20.0 <25"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "version": "BAARNE_R12_SELECTED_PUBLICATION_EXCLUSIONS_V1",
+  "scope": "SELECTED_R12_REVIEW_EXPORT_ONLY",
+  "historicalAssets": [
+    {
+      "path": "experiments/authority-free-sequence-v0.1/results/rfc3161-local/request.tsq",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/authority-free-sequence-v0.1/results/rfc3161-local/response.tsr",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/authority-free-sequence-v0.1/results/rfc3161-local/tsa-certificate.cer",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/ipfs-permanence/results/ipns-publisher.bin",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/ipfs-permanence/results/ipns-resolver.bin",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/ipfs-permanence/results/sequence-0.bin",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/ipfs-permanence/results/sequence-1.bin",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/problem-01-minimum-atomicity-v0.1/results/central-cas-control.sqlite3",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    },
+    {
+      "path": "experiments/problem-01b-provider-handover/results/canonical-succession-control.sqlite3",
+      "decision": "EXCLUDED_UNREVIEWED_RIGHTS_PRIVACY",
+      "historicalInventoryOnly": true,
+      "openedForThisReview": false
+    }
+  ],
+  "keyBearingEvidenceHolds": [
+    "docs/evidence/cometbft-lifecycle-v3/LAB_GENESIS.json",
+    "docs/evidence/cometbft-lifecycle-v3/PUBLIC_PROOF_PACKET.json",
+    "docs/evidence/cometbft-membership-recovery/CONSENSUS_RECOVERY_RESULT.json",
+    "docs/evidence/cometbft-membership-recovery/PUBLIC_PROOF_PACKET.json",
+    "docs/evidence/cometbft-owner-enrollment/CONSENSUS_RESULT.json",
+    "docs/evidence/cometbft-owner-enrollment/PUBLIC_ENROLLMENTS.json",
+    "docs/evidence/cometbft-owner-enrollment/PUBLIC_PROOF_PACKET.json",
+    "docs/evidence/cometbft-quota-idle/RESULT_03.json",
+    "docs/evidence/cometbft-quota-rehearsal/QUOTA_REHEARSAL_RESULT.json",
+    "docs/evidence/cometbft-quota-rehearsal/RESULT_03.json",
+    "docs/evidence/cometbft-quota-rehearsal/RESULT_04.json",
+    "docs/evidence/cometbft-quota-resource-sample/RESULT.json",
+    "docs/evidence/cometbft-segmented-store/CONSENSUS_RESULT.json",
+    "docs/evidence/cometbft-segmented-store/PUBLIC_PROOF_PACKET.json"
+  ],
+  "operationalExcludedFiles": [
+    "docs/CORE_AWS_CLEANUP_REPORT.md",
+    "docs/CORE_AWS_COST_RECHECK_REPORT.md",
+    "docs/CORE_AWS_REMOTE_REPLAY_REPORT.md",
+    "docs/CORE_CROSS_HOST_ARCHIVE_REPORT.md",
+    "experiments/authority-free-sequence-v0.1/results/rfc3161-local/request.tsq",
+    "experiments/authority-free-sequence-v0.1/results/rfc3161-local/response.tsr",
+    "experiments/authority-free-sequence-v0.1/results/rfc3161-local/tsa-certificate.cer",
+    "experiments/ipfs-permanence/results/ipns-publisher.bin",
+    "experiments/ipfs-permanence/results/ipns-resolver.bin",
+    "experiments/ipfs-permanence/results/sequence-0.bin",
+    "experiments/ipfs-permanence/results/sequence-1.bin",
+    "experiments/problem-01-minimum-atomicity-v0.1/results/central-cas-control.sqlite3",
+    "experiments/problem-01b-provider-handover/results/canonical-succession-control.sqlite3"
+  ],
+  "operationalExcludedPrefixes": [
+    "docs/evidence/aws-cost-recheck/",
+    "docs/evidence/aws-nonbaarne-cleanup/",
+    "docs/evidence/core-aws-replay/",
+    "docs/evidence/core-cross-host-archive/"
+  ],
+  "heldArtifactsReadOrCleared": false,
+  "gitHistoryIncluded": false,
+  "publicationAuthorized": false
+}

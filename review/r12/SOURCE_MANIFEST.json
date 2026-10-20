@@ -1,0 +1,906 @@
+{
+  "version": "BAARNE_K6_SOURCE_SNAPSHOT_V1",
+  "basedOn": "docs/evidence/release-candidate-k6/SOURCE_MANIFEST_R11.json",
+  "scope": "K6 operator acceptance: pinned encrypted intent + single signed-tail recovery, persisted storage halt, closed operator runbook; production gates remain closed",
+  "fileCount": 110,
+  "files": [
+    {
+      "path": "apps/hub/operator-backup.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_CHECKPOINT_BACKUP"
+      ],
+      "bytes": 6662,
+      "sha256": "ba16815661a0bdf16c03b5ed68d9e42cd689cfbcbcf96c144273f85369cede85"
+    },
+    {
+      "path": "apps/hub/operator-checkpoint.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_CHECKPOINT_BACKUP"
+      ],
+      "bytes": 7448,
+      "sha256": "e95e07ceee55b8a473eab7e7faa8e7b30201d05be84378fc7e0edc7cb79e4628"
+    },
+    {
+      "path": "apps/hub/operator-cli.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_DPAPI_PROVIDER"
+      ],
+      "bytes": 2645,
+      "sha256": "b8aa88db4857c4d3113fed07316221e4bbadc11305d2593e7822e303461afa00"
+    },
+    {
+      "path": "apps/hub/operator-provider.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_DPAPI_PROVIDER"
+      ],
+      "bytes": 9674,
+      "sha256": "c7d900c50fc068db78037a115e793c6b66816c010a12400d182fe511924eb160"
+    },
+    {
+      "path": "apps/hub/package.json",
+      "bytes": 188,
+      "sha256": "e546627c5eefae901588e5a8a58fe34740d814876f74fe0880dd6142d096e145",
+      "roles": [
+        "BUILD_METADATA"
+      ]
+    },
+    {
+      "path": "apps/hub/private-server.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 22388,
+      "sha256": "f7a2e0c89c75e4102146e15a26f3bc4a379a4b5062da128c19ec9cbb021ebe6c"
+    },
+    {
+      "path": "apps/hub/public/app.mjs",
+      "bytes": 13043,
+      "sha256": "8c99db6f3ef89fc328ce3b8c794cb40306d25559c9d2961a1b8105a478dee691",
+      "roles": [
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "apps/hub/public/discovery-guidance.mjs",
+      "bytes": 610,
+      "sha256": "b980b98e20c9e0998369c4efd2d2e2848a6882e0577c8f1cd48da95f69788c0d",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "apps/hub/public/index.html",
+      "bytes": 7486,
+      "sha256": "e00bd28b89480b3a660799aac5802a77c8e8f252959123763bfd7f8300d40138",
+      "roles": [
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "apps/hub/public/private-app.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 6603,
+      "sha256": "8b22b007b5b6ffb3e15337e7a0e2f27d5f4b6649d2839b99f374c1eeeea93e05"
+    },
+    {
+      "path": "apps/hub/public/private-client.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 8629,
+      "sha256": "146d37edc4edb64ba4f346a0cddb3db7ae559dbef14216a444b73e683e2f7f57"
+    },
+    {
+      "path": "apps/hub/public/private-protocol.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 5560,
+      "sha256": "b2a3571ec57c013ebe485e05c3054de9f9b23f24167a30eb6f4fb408503b097b"
+    },
+    {
+      "path": "apps/hub/public/private.html",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 3704,
+      "sha256": "124b7c220510b12d432f6b0be00969926562a1cae57abf46048c75c45df51540"
+    },
+    {
+      "path": "apps/hub/public/styles.css",
+      "bytes": 8080,
+      "sha256": "9eb3a0dad331a47ee72e29ce5e350e42a30fb4e2ad4e0c5549d891ac8a4fdb76",
+      "roles": [
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "apps/hub/server.mjs",
+      "bytes": 3402,
+      "sha256": "9fd25f888c18c19d3b858ddd7f61b2fc4fefb9998b987ccb4455c4a0d8d4a4f1",
+      "roles": [
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/application.mjs",
+      "bytes": 9203,
+      "sha256": "fceb0763c15dc607c0b49ce723694551809eb47a7c60106280cb11e2479e4ad1",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/bounded-input.mjs",
+      "bytes": 1172,
+      "sha256": "31b57a0bf1145a021a815542ae193d961c01c0fc12847330691124e1342b605a",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/bridge.go",
+      "bytes": 18047,
+      "sha256": "9b2c26fc59b3ff1b574f16e67a4dfbf690dd3550a0e1f2f749277004ee153f22",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/enrollment.mjs",
+      "bytes": 4139,
+      "sha256": "dd30b28fdf3b9d5839046bff751c0fb3a2cdf4e5efa0f5b406b5add3f510c905",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/fresh-genesis-rehearsal.mjs",
+      "bytes": 5156,
+      "sha256": "06a31652b6713fc70e30b5def53619f90f67b1ad6270cc5c8480f43673417a96",
+      "roles": [
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/introduction-client.mjs",
+      "bytes": 26200,
+      "sha256": "5cfdfb7e3c4d72f7b030a7ff0cf28a504c4e7e186f3b42b1f3e179a00a93f48d",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/lifecycle-abci.mjs",
+      "bytes": 2004,
+      "sha256": "683d92bdfaaacd9883dc98ed7947bb38388e777d6f35863675f045826cd4b3f9",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "membership"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/lifecycle-journal.mjs",
+      "bytes": 6592,
+      "sha256": "4dfcf397da5b07beca3db152384269aa3110037d2c07af193360f6fe77285c24",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "membership"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/lifecycle-v3.mjs",
+      "bytes": 7875,
+      "sha256": "cc02b53fe814ec4686380cbcf1d214697fb171959b9ca7aa6f2b53e421c086a8",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "membership"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/lifecycle-vectors.mjs",
+      "bytes": 5095,
+      "sha256": "7f4c056ecad6ee84b11f586133f7c1e046599b245989d977981a60db55450339",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/lifecycle-worker.mjs",
+      "bytes": 1691,
+      "sha256": "a371b6f3ecb40844233b36aaf4dce3177091deea2b3b6154841338296ed00549",
+      "roles": [
+        "membership"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership-bounds.mjs",
+      "bytes": 923,
+      "sha256": "7fa69c24d41ce2d7057daccf3894a0017cb7dd9014eef73b2debfe55856f9625",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership-fixture.mjs",
+      "bytes": 3124,
+      "sha256": "3c8eb518ff16217fce3b18c93f379e4ebd452e523f897cc2f85566194a79b3c6",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership-offline.mjs",
+      "bytes": 3608,
+      "sha256": "62da1e39598131af54dbf6a2ff1903c0f42aec09e90b58b2fb60428a0728b846",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership-recovery-fixture.mjs",
+      "bytes": 1939,
+      "sha256": "1afa8618677e94c6878efa318fe1c631a62fec1126951aa2d1b6bdbad0e93d19",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership-recovery.mjs",
+      "bytes": 10028,
+      "sha256": "b32c72e661d53d5735bfd1fd71b290dcc3bfd4857c2a568eec48f79cba361503",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/membership.mjs",
+      "bytes": 8146,
+      "sha256": "034d016229ac5bc8cc018e4aaeba506f254480dc6997c69bd56d7c699d0dd050",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/notice-batch.mjs",
+      "bytes": 16917,
+      "sha256": "7c8089b697a647ff246d60e983f4714fe8b37513df78155204dd352f6eea8bb1",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/observer-config.mjs",
+      "bytes": 2678,
+      "sha256": "90889d787ced4f916192633a8651c1cb927361cb7f74407fbc28b906dd8a350d",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/observer-stdio.mjs",
+      "bytes": 4143,
+      "sha256": "ad55889968bb2568693ad3063e6a703afbc825298238b8f9cc1c3ac340b1da50",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/observer.mjs",
+      "bytes": 4551,
+      "sha256": "71d23a3b518d885994bfd43be433fe75453bd8ae16fae4fbd19dde92e02a9b7a",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/owner-backup.mjs",
+      "bytes": 4129,
+      "sha256": "74f2cda1f0901fb1a7f59b1cefa2d3a6404106d9d1ed9fe8cafe7b160f355b3a",
+      "roles": [
+        "owner-recovery"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/owner-enrollment-fixture.mjs",
+      "bytes": 1729,
+      "sha256": "35f4af0c67c1a6a3a1667e4ebee14ce85af2e5b7df21d300fd2c176c7c81bcce",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/portable-owner-recovery.mjs",
+      "bytes": 8702,
+      "sha256": "23e0f767129cb5f67b6f94c40288fff5d96b585012537b430622553b2673aaa7",
+      "roles": [
+        "owner-recovery"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/private-directory.mjs",
+      "bytes": 215,
+      "sha256": "ebcec1981eeb625121560baca5d323df9bb1a69ede60f0af6e3783ddbfb77cbd",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/private-introduction.mjs",
+      "bytes": 25909,
+      "sha256": "29565b617a8d31e7aa06523828d60823dce2c090cca409034c326a891d939f84",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/private-vault.mjs",
+      "bytes": 7550,
+      "sha256": "b356dd41ced51d10cdee3c6e3d76dc3edd124851ea631c3ca6f4015724a9257d",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-vault"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/profile-handoff.mjs",
+      "bytes": 5205,
+      "sha256": "27e0e8f4ce8969779e7fff62aa34f4b5e0854428c6d2b92e8440b91fd0e77908",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/public-lifecycle-evidence.mjs",
+      "bytes": 8989,
+      "sha256": "b3e8fb68704903e590af0425bb35fc80f933b11cf8766ee9eba1b6395d5033b8",
+      "roles": [
+        "K2_PUBLIC_BOUNDARY"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/public-lifecycle-evidence.test.mjs",
+      "bytes": 9396,
+      "sha256": "564a7c75741d1a04246079f643c2f5e35ae0ec3d085bda1da2369d9225a17857",
+      "roles": [
+        "K2_PUBLIC_BOUNDARY"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/quota-halt-evidence.go",
+      "bytes": 3132,
+      "sha256": "fb670f65c0014ccf3dd683f6843329fc8d6c3120ecea0d47de51c890ec7b3a0c",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/recovery.mjs",
+      "bytes": 3533,
+      "sha256": "922b73566c82781256f71bbce8cc93d6f94768e190ca56511f04afa5c7d7460a",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "owner-recovery"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/reference-authority-v3.mjs",
+      "bytes": 2075,
+      "sha256": "58c5f53851d85a6ebc894952045cf18a1088bc31db7e128e9ac6e6de28732527",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "owner-recovery"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/segmented-store.mjs",
+      "bytes": 8787,
+      "sha256": "1918eaca29ddc49c82a6e4ccaab383c3a752d2a3439b37a9e83444c1edb53bcc",
+      "roles": [
+        "quota-comparison"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/source-notice-batch.mjs",
+      "bytes": 17185,
+      "sha256": "efc1ffeebf9580567894da9e830fc7553973a6e9bbca02d91ff143b5c73e62e5",
+      "roles": [
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/source-notice-delivery.mjs",
+      "bytes": 6333,
+      "sha256": "240e9e4aac829f92f8f448a5c6a61fe045040279fbffd143510d1c45f60eae4b",
+      "roles": [
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/source-notice.mjs",
+      "bytes": 4174,
+      "sha256": "05e92aff76e3a58dfa95738b93f07d8852d208492122254124191ad8c13807bf",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-introduction"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/vault-owner-client.mjs",
+      "bytes": 13166,
+      "sha256": "404419088b60908b619826a001ff87777eb70413e41d642d367f3be78de5daaa",
+      "roles": [
+        "private-vault"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/vault-service.mjs",
+      "bytes": 17144,
+      "sha256": "0c9bb97b416fe859af24483229578ae66caa9c1b74afaca9759081c2c99cf93c",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "private-vault"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/verify-offline.go",
+      "bytes": 15679,
+      "sha256": "5b2f092f05c0aece4acd290529ddf2085d08876a91b28681b2fdccf0371711e9",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/windows-lab-key.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_DPAPI_PROVIDER"
+      ],
+      "bytes": 2717,
+      "sha256": "6b5603f30bfd10bb9870c4f5f21c2ccf2ae546e1cc572c34b9db2bf8e5d813bb"
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/windows-vault-lock.mjs",
+      "bytes": 2030,
+      "sha256": "3f245a8215419092c10e1439773d11cb59e799e5b01a8254238596bca85bd244",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker-config.mjs",
+      "bytes": 1222,
+      "sha256": "eeff8cfb0ae16ee0fbd6c26985b01bedeb1c6a93cd72f9f12a294614396d0696",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "quota-comparison"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker-protocol.mjs",
+      "bytes": 2253,
+      "sha256": "aeeaedbbe4dfa0b6e5ca7a7aac7c22533ddc8f223d31d32c169d37c5e8e5ad89",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker-protocol.test.mjs",
+      "sha256": "288d49e806206175d9ec82c1718884b4512dcf1822040d486caa4b7a2f0d12cc",
+      "bytes": 19442,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker-stdio.mjs",
+      "bytes": 1047,
+      "sha256": "bf87cba484d855cd02375682ef63d7d021afc3da45680c2ba63dc411be2d7855",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker-transport.go",
+      "bytes": 9350,
+      "sha256": "6b11482584b2f51e66fb28f3bccd96ffc00aca21d0cff27c4e937066b0298f62",
+      "roles": [
+        "consensus-and-proof"
+      ]
+    },
+    {
+      "path": "experiments/cometbft-fee-free-lab/worker.mjs",
+      "bytes": 1755,
+      "sha256": "597480d42a9e2b83281efb6ce0689a1162ab7fad3b5606fbbeaa61213646ed19",
+      "roles": [
+        "quota-comparison"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 231276,
+      "sha256": "9278a59916fa2774b9d8d9441e62599dbc8c67307087c0eb85574476d0bd300f",
+      "roles": [
+        "BUILD_METADATA"
+      ]
+    },
+    {
+      "path": "package.json",
+      "bytes": 3445,
+      "sha256": "f362afa356aa5f4d4a35ffe04b585f80993baf1ce59ce5d98a47693dff73eca9",
+      "roles": [
+        "BUILD_METADATA"
+      ]
+    },
+    {
+      "path": "packages/admission/src/json.ts",
+      "bytes": 2331,
+      "sha256": "6d932bc388151014b371541d2e5498110a1595642cea13bd5798614f48a443a6",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/behavioral-twin/package.json",
+      "bytes": 282,
+      "sha256": "c046da069cfd45386a61392908b9e88ad0739356e157b92ec7d7c639543025ec",
+      "roles": [
+        "BUILD_METADATA"
+      ]
+    },
+    {
+      "path": "packages/behavioral-twin/src/evaluation.mjs",
+      "bytes": 2780,
+      "sha256": "558b869cdba3e0f748487f4eaaf407141ff89d1fa6273f3878852d36704f9701",
+      "roles": [
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "packages/behavioral-twin/src/handoff-projection.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 1131,
+      "sha256": "fde5dad12e85bce071f71e1839b98049298784bd7797a94cb1a4888516288355"
+    },
+    {
+      "path": "packages/behavioral-twin/src/index.mjs",
+      "bytes": 27117,
+      "sha256": "23fea4a70d963758a1e0d488cd5dda290c116924ddcc2a3b77dd3886faf447e7",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "packages/behavioral-twin/src/synthetic.mjs",
+      "bytes": 10445,
+      "sha256": "d2983f92f66ec297d48fe7bec7000e13b5c87af264f3605f45a5dd933bd090db",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "hub-and-discovery"
+      ]
+    },
+    {
+      "path": "packages/identity/src/envelope.ts",
+      "bytes": 3076,
+      "sha256": "793379888c7f3fde17205d6725013f4502586b9534a29c77120e5831e1ad7d0f",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/identity/src/evm-eoa.ts",
+      "bytes": 1229,
+      "sha256": "42a5c58a942aa52ffcce28f3d8b48abba9459a3297bbbbaf445a602d1b9d7bb1",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/identity/src/index.ts",
+      "bytes": 4207,
+      "sha256": "5a035bdfb98dba02a4c302c633fce3524acf426829d0a5f7398794a50713f26a",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/identity/src/types.ts",
+      "bytes": 1162,
+      "sha256": "84da1f55081194d79b471958ae6dd275d3d0e70325919d00761839a325d18939",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/membership-archive/src/index.mjs",
+      "bytes": 12366,
+      "sha256": "d751d765dfd5e3e16b4b1746ed7f1e18daac0d4f7d1e2b4d22b422c976849c1b",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/membership-gate-f/src/index.mjs",
+      "bytes": 27796,
+      "sha256": "67468cb4a454207abeadd5bab8176691f82716799b0279c01022acd023f85eb0",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/membership-state/src/index.mjs",
+      "bytes": 27658,
+      "sha256": "eff6258c463ebebcb9f57735417465191e0b5dc1e5588307dab352311489975c",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/trust-protocol/src/index.ts",
+      "bytes": 5818,
+      "sha256": "75e6e362abb49aeaff074f241ab37eca81a917b998aaf53314d6685f3c3e7a3c",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/trust-protocol/src/json.ts",
+      "bytes": 1939,
+      "sha256": "09f8054cce8aedaca3281225f4a479c97b42301380b8f3b038a7517459ad6458",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/trust-protocol/src/types.ts",
+      "bytes": 2019,
+      "sha256": "dad2406a6059883aa1b5afa8d63a071b877813a14a9d38ffbbcf0f5e7f2b6d3f",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/trust-protocol/src/validation-error.ts",
+      "bytes": 311,
+      "sha256": "fa4593b863358ed78fe5cd9704b1e1970cc465bb436cac14561465eb195d265f",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/v0.1-core/src/crypto.mjs",
+      "bytes": 2295,
+      "sha256": "dc6344d421428bbffcba7a4eb62f136b7ec2591eae883bcbf0c8b1ac78dc06da",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "packages/v0.1-core/src/reference.mjs",
+      "bytes": 2851,
+      "sha256": "d59f55208e8bbf51fd5d1137a3dd021e4e2ed61e1b7b3717a999c27ac133296f",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "scripts/build-monument-capsule.mjs",
+      "bytes": 6729,
+      "sha256": "26b2192fd6e3a54ec6fe90ae464be5ea6c43e61633bb68bb983cefe717478f54",
+      "roles": [
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/build-v1-review-package.mjs",
+      "sha256": "4083c79c104fdfaf2c0282adef39aa89bee170455e187e09c989092a0b66bcbb",
+      "bytes": 9668,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/check-cometbft-lifecycle.py",
+      "bytes": 13756,
+      "sha256": "679684e6ebc0b2b4442eee196d4fbe533522c4628080e81a4e6742b903e9e91f",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "scripts/check-cometbft-offline-proof.py",
+      "bytes": 12850,
+      "sha256": "61f84e5d3390387e8faef530e54118c96337fbeab8e73f98442536e5bff5f07d",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "scripts/check-k4-archive.py",
+      "sha256": "5611e047210861339f4d533413bc16d43de34439492041010fd70713a70615d5",
+      "bytes": 6309,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/check-k4-lifecycle.py",
+      "sha256": "6c9f259a4bfb1f9637fdc4d892e5f20a1231d8276a01139e2b721712fc2fff5c",
+      "bytes": 20436,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/check-k4-offline-proof.py",
+      "sha256": "ce656804e0071f8493f793b24a2b4f157c92feedca244d972604eb783fe343e1",
+      "bytes": 13802,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/core-portable-fixture.mjs",
+      "bytes": 2423,
+      "sha256": "fe6f58b112534155215a2d868bec39b3e7afc6f860b1b15c8f8651bc2791c8e0",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/core-portable-verifier.mjs",
+      "bytes": 3833,
+      "sha256": "77c686a584aa1608dcb8f99c9361b3e618ce9cc217553df02a73faffb31a1008",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/export-lifecycle-proof-blocks.py",
+      "bytes": 2355,
+      "sha256": "2fad8b6c822ec3a2428a0394bd3c6d4ec71e96a6216ec07efefdc1cff25ae9c0",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "scripts/k4-inputs.py",
+      "sha256": "151ea491f88647c795f0c41682f39fd7b7c5ead86ade8807ccde4188b06063c5",
+      "bytes": 1809,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/local-archive-rehearsal-client.mjs",
+      "bytes": 3313,
+      "sha256": "866ec2dd6bd60d13962d6fe5a9571d37d0e7607d842c7145f374e89bc45699b8",
+      "roles": [
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/local-archive-rehearsal-server.mjs",
+      "bytes": 2240,
+      "sha256": "2092259575924ba0997d89a7b858839560d66b40ee712e681c58fccfbc04f5bd",
+      "roles": [
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/monument-capsule-verifier.mjs",
+      "bytes": 4673,
+      "sha256": "07369af6a6752c9201c676aebc9fd5865bad3bb079a7eb00b83faf42c4bc3cf6",
+      "roles": [
+        "TRANSITIVE_SOURCE",
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "scripts/prepare-lifecycle-proof.mjs",
+      "bytes": 814,
+      "sha256": "57a8a8b9c8acc0e694ea60d7d3889d8f7a6b88f453045590f40585c4bd8f90f2",
+      "roles": [
+        "rehearsal-entrypoints"
+      ]
+    },
+    {
+      "path": "scripts/restore-certified-lifecycle-packet.py",
+      "sha256": "2b31ab87b1fb5ea2886019842f129822fbe0535576da92597ad037b7720ea5ef",
+      "bytes": 3176,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "scripts/restore-core-fixture.mjs",
+      "bytes": 2199,
+      "sha256": "346ce3d067ed3f6f4e19e1c09afd943079353d86ded9b8c5746a352222e7eb64",
+      "roles": [
+        "archive-and-preservation"
+      ]
+    },
+    {
+      "path": "tests/fixtures/hub-recovery-child.mjs",
+      "roles": [
+        "K6_OPERATOR_RECOVERY_ACCEPTANCE"
+      ],
+      "bytes": 1141,
+      "sha256": "d37149103f2c9641164bd9d0d91e800e58652024430a41765b4562837ef05cba"
+    },
+    {
+      "path": "tests/fixtures/k4-lifecycle-vectors.mjs",
+      "sha256": "3f47dc4f5ebc386596844eebb6c68e6d7f48f53a4d6d87452e4d89c0e07ff016",
+      "bytes": 6085,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "tests/helpers/m1-gate-h-fixture.mjs",
+      "bytes": 6900,
+      "sha256": "01b7c94ed3e3380548dbc292ba68d7cb84ce8bd99106de6c300b1c541da2f63c",
+      "roles": [
+        "TRANSITIVE_SOURCE"
+      ]
+    },
+    {
+      "path": "tests/hub-operator-provider.test.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_DPAPI_PROVIDER"
+      ],
+      "bytes": 12563,
+      "sha256": "b7d334619309336925f36285d91198fc2201686dc007d9e0735b3b47b01ca754"
+    },
+    {
+      "path": "tests/hub-operator-recovery.test.mjs",
+      "roles": [
+        "K6_OPERATOR_RECOVERY_ACCEPTANCE"
+      ],
+      "bytes": 13534,
+      "sha256": "9894c9725d8d9c8d9ab1918e9b78c20050133280cb52344c0cdd816941cd8e8b"
+    },
+    {
+      "path": "tests/hub-operator-restart.test.mjs",
+      "roles": [
+        "K6_SYNTHETIC_OPERATOR_CHECKPOINT_BACKUP"
+      ],
+      "bytes": 15839,
+      "sha256": "cba1aa69976678b676320a6a8717eca0d5b2e8c83b388338ddc2b6b1be08cea2"
+    },
+    {
+      "path": "tests/hub-private-integration.test.mjs",
+      "roles": [
+        "K5_SIGNED_SYNTHETIC_HUB"
+      ],
+      "bytes": 16689,
+      "sha256": "c4b39d57ffc0021a4e988c81823b37ee30ede8d02942a530f1c37d2c3afd51ff"
+    },
+    {
+      "path": "tests/k4-core-acceptance.test.mjs",
+      "sha256": "d5e9d2a3fb9ff06e7a4f9d17099208c9f184b4d5892e23c93d98122814e20d08",
+      "bytes": 7508,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    },
+    {
+      "path": "tests/test_certified_packet_restore.py",
+      "sha256": "0d0797883f86ee0e635a53ee3e8a85af02b0de01ce976a99caf83048bf6e43b7",
+      "bytes": 2969,
+      "roles": [
+        "K4_ACCEPTANCE_OR_RESTORE_TOOL"
+      ]
+    }
+  ],
+  "aggregateSha256": "d598c9dedf00ec989af3e3a0c38f152ef4476f89a92fec24c1375d2ebfcd65dc"
+}

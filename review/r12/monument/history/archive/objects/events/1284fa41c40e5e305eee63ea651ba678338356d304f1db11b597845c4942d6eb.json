@@ -1,0 +1,1 @@
+{"eventId":"0x1284fa41c40e5e305eee63ea651ba678338356d304f1db11b597845c4942d6eb","eventType":"MEMBERSHIP_ACTIVATED","eventVersion":"BAARNE_MEMBERSHIP_EVENT_V1","networkId":"baarne:m1-gate-h-test","occurredAt":43,"payload":{"applicationId":"0x650f901e7e69cec59825b6f3732bb79a14d28957171dcc9624adafb864e8cbd7","candidate":"evm-eoa:0x138854708d8b603c9b7d4d6e55b6d32d40557f4d"}}

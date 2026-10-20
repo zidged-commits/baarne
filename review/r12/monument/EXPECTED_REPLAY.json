@@ -1,0 +1,128 @@
+{
+  "status": "PORTABLE_SYNTHETIC_REPLAY_VERIFIED",
+  "packageHash": "71743ccf7bb49dd67092e96a07d0ce9b0a0ee8d981c1e27947b8cc8b254cd87d",
+  "stateHash": "0x599e2e7b9ed6e4d84e94355805ab1e0a69c073ad8ce6c0f399cef6a902cd5c8b",
+  "accepted": [
+    {
+      "eventId": "0xa68ccf706668a92e6535b1221bd2b8c6e062aa6bdf71c3767b6ea15c6164868f",
+      "position": [
+        300,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x4a79deb22fd5d892c693fd419a9fdf76e304fbb73c057f86d56eaeb65c01d5f3",
+      "position": [
+        301,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x13eeed802552891c4a7175a2e65f056d9d1d6bcf5902456a9721303fc7c2d27f",
+      "position": [
+        302,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0xe22052149f44fe5d5f306707468a4a472dd96befdd1ea1d118375851c46812b4",
+      "position": [
+        303,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x45be86f279ad0766765cb6cd72dc2993c196167e7e8c726c9976241ed686ecd9",
+      "position": [
+        304,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x8fbaae004215f2eae4ed5b3800fea542b9003d1e8201496386f98c46b86739b7",
+      "position": [
+        305,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x959ccffd71d771361debb74dbfc46ecced78fc24b352ed1f33afc07bbcbdc367",
+      "position": [
+        306,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0xfcee8a497a1fb5a0f2b48d837aba3aa27856499621df9710ec8f0f397200496b",
+      "position": [
+        307,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x985304a999a647ca975df890fe92144106bcf57e37de49a27c1c58092f52d38e",
+      "position": [
+        308,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    },
+    {
+      "eventId": "0x725fc55b7a232e84a16f550f096d448a831eaa2db5ea71a88a33b398dbbf794e",
+      "position": [
+        309,
+        0,
+        0
+      ],
+      "status": "ACCEPTED"
+    }
+  ],
+  "rejected": [
+    {
+      "eventId": "0xbd742d457277e002964ad0e840b6dc15b6c1c8a765168b6842001f39a0166965",
+      "position": [
+        310,
+        0,
+        0
+      ],
+      "status": "UNSUPPORTED_POLICY"
+    },
+    {
+      "eventId": "0x58cd117bdf68d231d7cec8446dc0fdaffebe463857b5d48da06734aef4ad8131",
+      "position": [
+        311,
+        0,
+        0
+      ],
+      "status": "AUTHORITY_STATE_MISMATCH"
+    },
+    {
+      "eventId": "0x1284fa41c40e5e305eee63ea651ba678338356d304f1db11b597845c4942d6eb",
+      "position": [
+        312,
+        0,
+        0
+      ],
+      "status": "APPLICATION_NOT_READY"
+    }
+  ],
+  "evidenceMode": "SYNTHETIC_FIXTURE",
+  "livePilotAuthorized": false
+}

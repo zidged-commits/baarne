@@ -1,0 +1,58 @@
+{
+  "name": "Reproducible technical finding",
+  "description": "A non-sensitive reproducible r12 defect; use private reporting for security issues.",
+  "title": "[Finding] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "For vulnerabilities/private data use https://github.com/zidged-commits/Baarne/security/advisories/new. Include only fresh synthetic examples. Core Pilot NO-GO."
+      }
+    },
+    {
+      "type": "input",
+      "id": "commit",
+      "attributes": {
+        "label": "Commit and affected file/component",
+        "description": "Identify the exact source snapshot you reviewed."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "reproduction",
+      "attributes": {
+        "label": "Minimal reproduction and environment",
+        "description": "Runtime/platform, exact steps and a redacted synthetic example."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected-observed",
+      "attributes": {
+        "label": "Expected result, observed result and impact"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "Submission boundary",
+        "options": [
+          {
+            "label": "This public issue contains no real-user data, credentials, private provider state or vulnerability exploit details.",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}
