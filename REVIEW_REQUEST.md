@@ -1,6 +1,6 @@
-# BAARNE r12 — request for independent review
+# baarne r12 — request for independent review
 
-BAARNE explores a framework for voluntary private profiles, explainable
+baarne explores a framework for voluntary private profiles, explainable
 reciprocal opportunities and introductions requiring both people's consent.
 Public historical references, membership authority and private discovery/
 introduction graphs remain separate. Introduction never automatically creates

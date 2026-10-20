@@ -1,6 +1,6 @@
-# BAARNE licensing scope — publication layout
+# baarne licensing scope — publication layout
 
-The owner selected AGPL-3.0-only for original BAARNE software and CC BY-SA4.0
+The owner selected AGPL-3.0-only for original baarne software and CC BY-SA4.0
 for original documentation/manifests on16 October2026. See the complete
 [software license](LICENSE) and [documentation license](LICENSES/CC-BY-SA-4.0.txt).
 
@@ -16,6 +16,6 @@ Dependencies, upstream legal texts, data, evidence containers and trademarks
 retain their own applicable terms and exceptions. A software license does not
 authorize publication of private data or keys.
 
-Root README/prose adaptation: BAARNE project,20 October2026, CC BY-SA4.0;
+Root README/prose adaptation: baarne project,20 October2026, CC BY-SA4.0;
 links and directory references were adapted, original application/capsule bytes
 were not changed. Source publication is not production deployment or pilot GO.

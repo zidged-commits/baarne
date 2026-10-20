@@ -1,6 +1,6 @@
 # Security reporting
 
-BAARNE r12 is a synthetic source-review candidate. There is no approved
+baarne r12 is a synthetic source-review candidate. There is no approved
 production deployment or supported real-user pilot. The technical checklist
 is complete; independent security/privacy/legal/operator reviews remain open.
 

@@ -1,6 +1,6 @@
-# BAARNE
+# baarne
 
-BAARNE explores voluntary, user-controlled profiles, explainable reciprocal
+baarne explores voluntary, user-controlled profiles, explainable reciprocal
 opportunities and introductions requiring both people's consent. Public
 reference history, membership authority and private introductions are separate.
 No introduction automatically creates a membership reference.
@@ -68,7 +68,9 @@ cannot authenticate its own replacement or confer release authority.
 Original software: [AGPL-3.0-only](LICENSE). Original documentation/manifests:
 [CC BY-SA4.0](LICENSES/CC-BY-SA-4.0.txt). See [scope](LICENSING.md) and the
 [preserved third-party notices](review/r12/application/THIRD_PARTY_NOTICES.md).
-Upstream code, data and trademarks are not globally relicensed as BAARNE.
+Upstream code, data and trademarks are not globally relicensed as baarne.
 
-This repository publishes the BAARNE r12 source-review candidate.
+This repository publishes the baarne r12 source-review candidate.
 GitHub source publication does not launch a service or authorize a live pilot.
+
+Brand writing: [baarne, always lowercase](BRANDING.md).

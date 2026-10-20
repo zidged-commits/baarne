@@ -1,6 +1,6 @@
 # Contributing a bounded review
 
-Thank you for reviewing BAARNE. The immediate request is independent assessment
+Thank you for reviewing baarne. The immediate request is independent assessment
 of the existing r12 candidate. The finite K1–K8 implementation list is complete;
 new social features, a new consensus design and production policy changes are
 outside this review. Concrete security, consent or data-loss findings can reopen
